@@ -30,7 +30,8 @@ github:
 
 twitter:
   username: twitter_username # change to your Twitter username
-
+author:
+  name: Bhuvaneshwar G
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
@@ -224,3 +225,5 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+license: false
