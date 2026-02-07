@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: Bhuvaneshwar G # the main title
 
-tagline: A blog website # it will display as the subtitle
+tagline: Ctf blog and project documentation site # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Ctf walkthrough and project documentation
@@ -92,7 +92,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-#theme_mode: #[light | dark]
+# theme_mode: #[light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url

@@ -1,0 +1,98 @@
+<!-- Custom CSS and JS to hide Trending Tags, Author Info, and Share Button -->
+<style>
+/* Hide Trending Tags in right sidebar */
+#access-tags,
+#panel-wrapper > div:last-child,
+#panel-wrapper .card:last-child,
+.trending-tags,
+aside > div:last-child {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Hide Author Info and License */
+.post-tail-bottom,
+.license-wrapper,
+footer.post-tail-bottom {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Hide Share Button */
+.share-wrapper,
+.post-share,
+div.share-wrapper,
+.share-label,
+.share-icons {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+</style>
+
+<!-- Backup JavaScript to force hide elements -->
+<script>
+(function() {
+  'use strict';
+  
+  function hideElements() {
+    // Hide Trending Tags
+    const trendingTags = document.querySelector('#access-tags');
+    if (trendingTags) {
+      trendingTags.style.display = 'none';
+      trendingTags.remove();
+    }
+    
+    // Also try last card in panel
+    const panelWrapper = document.querySelector('#panel-wrapper');
+    if (panelWrapper) {
+      const lastCard = panelWrapper.querySelector('div:last-child');
+      if (lastCard && (lastCard.textContent.includes('Trending') || lastCard.querySelector('.tag'))) {
+        lastCard.style.display = 'none';
+        lastCard.remove();
+      }
+    }
+    
+    // Hide Author/License
+    const authorInfo = document.querySelectorAll('.post-tail-bottom, .license-wrapper');
+    authorInfo.forEach(el => {
+      if (el) {
+        el.style.display = 'none';
+        el.remove();
+      }
+    });
+    
+    // Hide Share Button
+    const shareButtons = document.querySelectorAll('.share-wrapper, .post-share');
+    shareButtons.forEach(el => {
+      if (el) {
+        el.style.display = 'none';
+        el.remove();
+      }
+    });
+  }
+  
+  // Run immediately
+  hideElements();
+  
+  // Run after page loads
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hideElements);
+  } else {
+    hideElements();
+  }
+  
+  // Run again after delays (for dynamic content)
+  setTimeout(hideElements, 100);
+  setTimeout(hideElements, 500);
+  setTimeout(hideElements, 1000);
+})();
+</script>
