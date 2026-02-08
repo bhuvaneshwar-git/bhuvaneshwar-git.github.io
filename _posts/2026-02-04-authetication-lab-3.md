@@ -2,7 +2,6 @@
 title: Authentication vulnerabilities Lab 3 
 date: 2026-02-04
 categories: [portswigger]
-tags: [authetication,portswigger] # tag should be always in lowercase
 ---
 
 # Lab 3 - Username enumeration via response timing 

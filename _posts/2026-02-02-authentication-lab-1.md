@@ -2,7 +2,6 @@
 title: Authentication vulnerabilities Lab 1 
 date: 2026-02-02
 categories: [portswigger]
-tags: [authetication,portswigger]
 ---
 
 # Lab 1: Username enumeration via different responses

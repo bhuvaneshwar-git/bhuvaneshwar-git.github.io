@@ -3,7 +3,6 @@ title: HTB CTF 1
 date: 2026-02-04
 author: Bhuvaneshwar G
 categories: [CTF]
-tags: [htb] # tag should be always in lowercase
 ---
 
 # CTF 1
