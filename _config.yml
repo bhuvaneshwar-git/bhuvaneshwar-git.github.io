@@ -230,3 +230,5 @@ jekyll-archives:
   toc: false
   tagline: false
 
+license: false
+share: false
