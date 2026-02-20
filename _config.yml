@@ -16,7 +16,7 @@ timezone: Asia/Kolkata
 
 title: Bhuvaneshwar G # the main title
 
-tagline: Ctf blog and project documentation site # it will display as the subtitle
+tagline: Ctf writeup and project documentation site # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Ctf walkthrough and project documentation
@@ -27,7 +27,7 @@ url: "https://github.com/bhuvaneshwar-git.github.io"
 
 github:
   username: bhuvaneshwar-git # change to your GitHub username
-  
+
 linkedin:
   username: bhuvaneshwarg26
 
@@ -102,7 +102,7 @@ pageviews:
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "/assets/images/profile/profile-pic.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
