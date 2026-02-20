@@ -1,10 +1,8 @@
 ---
-title: Authentication vulnerabilities Lab 3 
+title: Username enumeration via response timing ( Auth Lab 3 )
 date: 2026-02-04
-categories: [portswigger]
+categories: [portswigger,Authentication]
 ---
-
-# Lab 3 - Username enumeration via response timing 
 
 Tool used - Burpsuite community edition
 

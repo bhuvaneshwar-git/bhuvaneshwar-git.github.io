@@ -1,18 +1,24 @@
 ---
-title: Authentication vulnerabilities Lab 1 
+title: Username enumeration via different responses ( Auth Lab 1)
 date: 2026-02-02
-categories: [portswigger]
+categories: [portswigger,Authentication]
 ---
 
-# Lab 1: Username enumeration via different responses
+**lab url :** [Lab Link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-different-responses)
 
-Tool used - caido
+**Module :** Authentication Vulnerabilities
+
+**Difficulty :** Apprentice
+
+**Tool used -** caido
 
 username wordlist - [Username](https://portswigger.net/web-security/authentication/auth-lab-usernames)
 
 Password wordlist - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 ---
+
+## Steps
 <ins>**Step 1**</ins>: Type invalid username and passowrd in login page and inpect using caido 
 
 <ins>**Step 2**</ins>: In caido , go to **HTTP history** forward **post /login** request to caido automate.
