@@ -77,8 +77,8 @@ Before starting, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/bhuvaneshwar-git/linux-os-browser.git
-cd linux-os-browser
+git clone https://github.com/bhuvaneshwar-git/college_project.git
+cd college_project
 ```
 
 ### Step 2: Project Structure
@@ -86,22 +86,34 @@ cd linux-os-browser
 Your project should have this structure:
 
 ```
-linux-os-browser/
-├── frontend/                 # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── AuthProvider.jsx
-│   │   │   ├── ProtectedRoute.jsx
-│   │   ├── App.jsx
-│   │   ├── Login.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── .env
-├── backend/                  # Express backend
-│   ├── server.js
-│   ├── package.json
-│   └── .env
-└── README.md
+project-root/
+├── persistence_storage/
+├── public/
+├── screenshots/
+├── vnc-frontend/
+├── vnc_kali/
+├── vnc_parrot/
+│
+├── windows-server.js/
+│   └── server.js
+│
+├── authgear.db
+├── package.json
+├── package-lock.json
+├── README.md
+├── server.js
+├── vnc_kali/
+│   ├── Dockerfile
+│   ├── start-vnc.sh
+│   ├── vnc-control-panel.js
+│   └── vnc-control-styles.css
+│
+└── vnc_parrot/
+    ├── Dockerfile
+    ├── start-vnc.sh
+    ├── vnc-control-panel.js
+    └── vnc-control-styles.css
+
 ```
 
 ---
@@ -332,7 +344,7 @@ docker images
 You should see:
 ```
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
-vnc_ubuntu    latest    xxxxxxxxxxxx   X minutes ago   XXX MB
+vnc_parrot    latest    xxxxxxxxxxxx   X minutes ago   XXX MB
 vnc_kali      latest    xxxxxxxxxxxx   X minutes ago   XXX MB
 ```
 
@@ -501,9 +513,9 @@ id|userId|username|email|loginTime|logoutTime|isActive
 ### Container Management Flow
 
 ```
-1. User clicks "START UBUNTU"
+1. User clicks "START Kali"
    ↓
-2. Frontend sends POST to /start-container?os=ubuntu
+2. Frontend sends POST to /start-container?os=kali
    ↓
 3. Backend validates JWT token
    ↓
@@ -628,7 +640,7 @@ Authorization: Bearer <access_token>
 
 ### Container Management Endpoints
 
-#### POST `/start-container?os=<ubuntu|kali>`
+#### POST `/start-container?os=<parrot|kali>`
 Start a Docker container for user
 
 **Headers:**
@@ -642,17 +654,17 @@ Authorization: Bearer <access_token>
   "success": true,
   "url": "http://localhost:8001/vnc.html?autoconnect=true",
   "userId": "db914422-3815...",
-  "containerName": "vnc_ubuntu_db914422",
+  "containerName": "vnc_kali_db914422",
   "vncPort": 7042,
   "novncPort": 8042,
-  "os": "ubuntu",
+  "os": "kali",
   "message": "Container started successfully"
 }
 ```
 
 ---
 
-#### POST `/stop-container?os=<ubuntu|kali>`
+#### POST `/stop-container?os=<parrot|kali>`
 Stop user's container
 
 **Headers:**
@@ -684,9 +696,9 @@ Authorization: Bearer <access_token>
   "success": true,
   "sessions": [
     {
-      "os": "ubuntu",
+      "os": "kali",
       "url": "http://localhost:8042/vnc.html",
-      "containerName": "vnc_ubuntu_db914422",
+      "containerName": "vnc_kali_db914422",
       "vncPort": 7042,
       "novncPort": 8042,
       "startedAt": "2026-01-13T11:20:00.000Z"
