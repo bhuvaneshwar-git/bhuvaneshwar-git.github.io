@@ -8,7 +8,7 @@ categories: [project]
 
 ## Project Overview
 
-A web application that allows users to run Linux operating systems (Kali Linux and Ubuntu) directly in their browser through VNC. The application features user authentication via Authgear, session management with login/logout tracking, and isolated Docker containers for each user.
+A web application that allows users to run Linux operating systems (Kali Linux and Parrot) directly in their browser through VNC. The application features user authentication via Authgear, session management with login/logout tracking, and isolated Docker containers for each user.
 
 ### Key Features
 
@@ -77,7 +77,7 @@ Before starting, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/linux-os-browser.git
+git clone https://github.com/bhuvaneshwar-git/linux-os-browser.git
 cd linux-os-browser
 ```
 
