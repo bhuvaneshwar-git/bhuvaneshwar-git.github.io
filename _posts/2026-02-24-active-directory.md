@@ -4,7 +4,7 @@ date: 2026-02-24
 categories: [project]
 ---
 
-<ins><em>**Tools**</em></ins>: 
+<ins><em>**Tool used**</em></ins>: 
 
 - Active Directory
 
@@ -50,13 +50,13 @@ i.Execute the **join-ad.sh** script to join the computer to the AD domain.
 
 ii.The script applies required configurations and registers the system in AD.
 
-# **High Level Process Diagram**
+# <ins>**High Level Process Diagram**<ins>
 
 ![](/assets/images/AD/Picture1.png)
 
 ![](/assets/images/AD/Picture2.png)
 
-# **Process -**
+# <ins>**Process**</ins>
 
 ## **a) Creating User account**
 
