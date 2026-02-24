@@ -285,3 +285,32 @@ log_info "✔ Home directories will be created"
 log_info "✔ No sudo access is granted to AD users"
 
 ```
+
+## <ins>**Error Handling**</ins>
+
+![](/assets/images/AD/2026-02-24_20-51.png)
+
+**Issue:**
+While switching the Active Directory (AD) user on a Linux system, the user change may fail with the error message “ **user does not exist or the user entry does not contain all the required fields** “.
+
+<ins>**Solution:**</ins>
+
+i.Log in as the root user (or switch to root using sudo su -).
+
+ii.Remove the system from the AD domain using the following command:
+
+```bash
+sudo realm leave your.domain.com -U admin
+```
+
+iii.enter the Active Directory (AD) admin user password to authorize the domain leave operation.
+
+iv.Re-run the **join-ad script** to rejoin the system to the AD domain
+
+v. After successful domain join, verify that the required AD user is switched and accessible.
+
+**Outcome**
+
+![](/assets/images/AD/2026-02-24_20-52.png)
+
+i. The system is cleanly removed and rejoined to the AD domain, and the correct AD user is successfully applied.
