@@ -4,21 +4,28 @@ date: 2026-02-02
 categories: [portswigger,Authentication]
 ---
 
-**lab url :** [Lab Link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-different-responses)
+**Platform :** Port swigger Web Security Academy
 
 **Module :** Authentication Vulnerabilities
 
 **Difficulty :** Apprentice
 
-**Tool used -** caido
-
-username wordlist - [Username](https://portswigger.net/web-security/authentication/auth-lab-usernames)
-
-Password wordlist - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+**lab url :** [Lab Link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-different-responses)
 
 ---
 
-## Steps
+**Tools used -** 
+
+- Caido
+
+- Wordlist - 
+    - [Username](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+    - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+---
+
+## <ins>Steps : </ins>
+
 <ins>**Step 1**</ins>: Type invalid username and passowrd in login page and inpect using caido 
 
 <ins>**Step 2**</ins>: In caido , go to **HTTP history** forward **post /login** request to caido automate.

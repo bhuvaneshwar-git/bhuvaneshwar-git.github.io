@@ -4,9 +4,25 @@ date: 2026-02-04
 categories: [portswigger,Authentication]
 ---
 
-Tool used - Burpsuite community edition
+**Platform :** Port swigger Web Security Academy
 
-Credintials - wiener:peter 
+**Module :** Authentication Vulnerabilities
+
+**Difficulty :** PRACTITIONER
+
+**lab url :** [Lab Link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-response-timing)
+
+---
+**Tool used :** 
+- Burp Suite community edition
+
+- Wordlist - 
+    - [Username](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+    - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+
+---
+
+**Credintials -** wiener:peter 
 
 ---
 

@@ -4,21 +4,27 @@ date: 2026-02-03
 categories: [portswigger,Authentication]
 ---
 
-**lab link :** [link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-subtly-different-responses#)
+**Platform :** Port swigger Web Security Academy
 
 **Module :** Authentication Vulnerabilities
 
 **Difficulty :** Practitioner
 
+**lab link :** [link](https://portswigger.net/web-security/learning-paths/authentication-vulnerabilities/password-based-vulnerabilities/authentication/password-based/lab-username-enumeration-via-subtly-different-responses#)
 
-**Tool used :** Burp Suite community edition
+---
 
-**credintials :** [username](https://portswigger.net/web-security/authentication/auth-lab-usernames) & [password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
+**Tool used :** 
+- Burp Suite community edition
+
+- Wordlist - 
+    - [Username](https://portswigger.net/web-security/authentication/auth-lab-usernames)
+    - [Password](https://portswigger.net/web-security/authentication/auth-lab-passwords)
 
 
 ---
 
-**Steps :**
+## <ins>Steps :</ins>
 
 <ins>**Step1**</ins>: Type a random username and password in login portal and inspect using burpsuite proxy
 
